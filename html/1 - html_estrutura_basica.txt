@@ -1,0 +1,23 @@
+<!doctype> - Indica ao browser a versão do HTML
+
+<html>Delimita o documento html</html>
+
+<head>Cabeçalho da página, possui metadatas, estruturas/instruções   que serão executadas
+executadas</head>
+
+<meta/>
+
+<title>Define o titulo da página</title>
+
+<body>Corpo da página, possúi elementos que aparecerão na página </body>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+</head>
+<body>
+<!-- Conteúdo -->
+</body>
+</html>
