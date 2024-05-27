@@ -1,0 +1,4 @@
+Extensões 
+
+Web Development chrome - desativar recursos do site
+Colorzilla - Encontrar cores no site
