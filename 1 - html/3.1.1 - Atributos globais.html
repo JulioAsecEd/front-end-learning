@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fundo_azul{
+            background-color: rgb(12, 238, 219);
+        }
+
+        #div1{
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+<body id="topo">
+    <p>acess key <br>
+        Especifica uma tecla de atalho para ativar/focar um elemento. <br>
+        Deve ser um único caracter. <br>
+        Tecla de ativação especifica em cada navegador. <br>
+
+        aperte alt + a.
+    </p>
+    <textarea name="" id="" accesskey="a"></textarea>
+
+    <hr>
+
+    <p class="fundo_azul">class <br>
+        Atribui uma ou mais classes especificas para um elemento
+    </p>
+
+    <hr>
+
+    <p> contenteditable <span contenteditable="true">true|false</span> <br>
+        Especifica se o conteúdo de um elemento é editável ou não.
+    </p>
+
+    <hr>
+
+    <p data-type-exemplo="data-type-exemplo">data-* <br>
+        Usado para armazenar dados personalizados privados para a pagina ou aplicação. <br>
+        Nos dá a habilidade de carregar atributos de dados personalizados em todos os elementos HTML. <br>
+        O atributo não pode conter nenhuma letra maiúscula e deve conter ao menos um caracter longo depois do prefixo "data-"
+        O valor do atributo pode ser qualquer string.
+    </p>
+
+    <p>dir <br>
+        Especifica a direção do texto do conteúdo do elemento.
+
+        <p dir="rtl"> Este texto vai da direita pra esquerda</p>
+    </p>
+
+    <hr>
+
+    <p>draggable <br> 
+        Especifica se um elemento é arrastável ou não. true|false
+
+        <div id="drag1" draggable="true" ondragstart="drag(event)">Me arraste para a textarea</div>
+        <br>
+        <p id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></p>
+    </p>
+
+    <hr>
+
+    <p>enterkeyhint <br>
+        Habilita a troca da aparência da tecla "ENTER" em teclados virtuais. <br>
+
+        done <br>
+        enter <br>
+        go <br>
+        next <br>
+        previous <br>
+        search <br>
+        send <br>
+
+        <input type="text" enterkeyhint="go">
+    </p>
+
+    <hr>
+
+    <p>hidden <br> 
+        É um atributo boleano. <br>
+        Quando presente, especifica que um elemento ainda não é ou não será, relevante. <br>
+        Browsers não devem mostrar elementos que tem o hidden. <br>
+
+        <span hidden>Elemento hidden</span>
+    </p>
+
+    <hr>
+
+    <p id="elemento">id <br>
+        Especifica um ID único para um elemento HTML. <br>
+        Deve conter ao menos 1 caracter. <br>
+        Não deve conter qualquer caracter de espaço. <br>
+
+        <a href="#topo">Volte ao topo</a>
+    </p>
+
+    <hr>
+
+    <p> inert <br>
+        Disabilita um elemento e todos os elementos dentro. <br>
+        O elemento continua visível, mas eles não possuem função(são ignorados por leitores). <br>
+
+        <div inert>
+            <button>Aperte</button>
+            <input type="text">
+        </div>
+    </p>
+
+    <hr>
+
+    <p>inputmode <br>
+        Habilita a mudança da aparencia do teclado num telefone ou tablet. <br>
+
+        decimal <br>
+        email <br>
+        none <br>
+        numeric <br>
+        search <br>
+        tel <br>
+        text <br>
+        url <br>
+    </p>
+
+    <hr>
+
+    <p lang="pt-br">lang <br>
+        Especifica o idioma do conteúdo de um elemento.
+    </p>
+
+    <hr>
+
+    <p>popover <br>
+        Define o elemento como um elemento popover. <br>
+        Quando for invocado isso será colocado no topo do elemento, não interferindo na posição de outros elementos. <br>
+
+
+        <div popover id="meupopover">
+            <p>Você fez isso!!!!</p>
+            <button popovertarget="meupopover">Fechar</button>
+        </div>
+        <button popovertarget="meupopover">Clique</button>
+    </p>
+
+    <hr>
+
+    <p>spellcheck <br>
+        Especifica se o elemento está para correção gramatical ou não.
+
+        <p contenteditable="true" spellcheck="true">Texte aqui</p>
+    </p>
+
+
+    <hr>
+
+    <p>style <br>
+        Especifica um inline style para um elemento. <br>
+
+        <p style="color: aquamarine;">aqui</p>
+    </p>
+
+    <hr>
+
+    <p>tabindex <br>
+        Especifica a ordem do TAB de um elemento. <br>
+        <button tabindex="1"></button>
+        <a href="" tabindex="3">Segundo</a>
+        <a href="" tabindex="4">Terceiro</a>
+        <a href="" tabindex="2">Primeiro</a>
+    </p>
+
+    <hr>
+    
+    <p>title <br>
+        Especifica uma informação extra a um elemento. <br>
+        A informação é mais frequente mostrada ao passar o mouse por cima do elemento. <br>
+
+        <p title="Você fez isso!!">Passe o mouse</p>
+    </p>
+
+    <hr>
+
+    <p>translate <br>
+        Especifica se o conteúdo de um elemento deve ser traduzido ou não
+
+        
+    </p>
+
+
+    <script>
+        function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("Text", ev.target.id);
+}
+
+function drop(ev) {
+  let data = ev.dataTransfer.getData("Text");
+  ev.target.appendChild(document.getElementById(data));
+  ev.preventDefault();
+}
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bg_repeat{
+            width: 100%;
+            color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <p>Usado para adicionar efeitos de fundo para elementos <br>
+        background-color <br>
+        background-image <br>
+        background-repeat <br>
+        background-attachment <br>
+        background-position <br>
+        background(shorthand) <br>
+    </p>
+    
+    <hr>
+
+    <p style="background-color: aqua;">background-color <br>
+        Especifica a cor de fundo de um elemento. <br>
+        Opacidade / Transparência podem ser definidas
+
+        <p style="background-color: aqua; opacity: 0.9;">Aqui</p>
+        <p style="background-color: rgb(0, 128, 0, 0.3 );">Opacidade usando RGB</p>
+    </p>
+    
+    <hr>
+
+    <p style=" background-image: url(https://static.wikia.nocookie.net/enter-the-matrix/images/8/84/Matrix.png/revision/latest?cb=20131202023025&path-prefix=pt-br);">background-image <br>
+        Especifica uma imagem para usar como fundo de um elemento.
+    </p>
+
+    <hr>
+
+    <p>Background repeat <br>
+        Por padrão a background-image repete uma imagem tanto horizontamente quanto verticalmente. <br>
+        Algumas imagens devem repetir somente na horizontal ou na vertical, ou parecerão estranhas. <br>
+         
+        repeat-x - A imagem se repete somente horizontalmente. <br>
+        repeat-y - A imagem repete somente verticalmente. <br>
+        no-repeat - A imagem não se repete. <br>
+    </p>
+
+    <p> Background-position <br>
+        Define a posição inicial de uma imagem de fundo <br>
+        Por padrão ela é top-left e repete tanto verticalmente quanto horizontalmente. <br>
+
+        Valores: (se somente um valor for especificado o outro será center) <br>
+        let top - 
+        left center -
+        left bottom -
+        right top -
+        right center -
+        right bottom -
+        center top -
+        center center -
+        center bottom - 
+
+        <br>
+
+        x% y% - Vertical/Horizontal <br>
+        
+        xpos ypos - Vertical/Horizontal basedos em pixels. <br>
+
+        initial - Define a propriedade para seu valor padrão. <br>
+
+        inherit - Herda do elemento pai. <br>
+
+
+    </p>
+
+    <p>Background-attachment <br>
+        Especifica if a imagem de fundo deve rolar ou ser fixada. <br>
+    
+        Fixed - imagem fixa. <br>
+        scroll - imagem rola junto com a página. <br>
+    </p>
+
+    <p>background-clip <br>
+        Especifica quão longe o fundo deve se extender dentro de um elemento. <br>
+
+        border-box - Valor padrão. O fundo se extende atras da borda. <br>
+        padding-box - O fundo se extende até a beira interna da borda. <br>
+        content-box - o fundo se extende até a borda da caixa de conteúdo. <br>
+
+    </p>
+
+    <p>backgroun-origin <br>
+        Especifica a posição de origen da imagem de fundo. <br>
+        Não tem efeito se background-attachment estiver fixo. <br>
+
+        padding-box - A imagem de fundo começa da borda interna do padding. <br>
+        border-box - A imagem começa na borda externa. <br>
+        content-box - A imagem começa dentro do conteúdo. <br>
+    </p>
+
+    <p>Background-size <br>
+        Especifica o tamanho da imagem de fundo. <br>
+        Existem 4 modos de usar essa propriedade <br>
+
+        auto - Valor padrão A imagem fica no seu tamanho original. <br>
+        length - Define a largura e a altura da imagem de fundo. Se apenas um valor for informado <br>
+        o segundo fica como auto. <br>
+        porcentagem - Define o tamanho da imagem e fundo como porcentagem do elemento pai. <br>
+        cover - Redimensiona a imagem de fundo para cobrir o container inteiro, <br>
+        mesmo se tiver que esticar a imagem ou cortar uma das extremidades. <br>
+        contain - redimensiona a imagem de fundo para ter certeza ficará totalmente visível. <br>
+    </p>
+
+    <p>shorthand <br>
+
+        background:(color)(image)(repeat)(attachment)(position);
+
+
+    </p>
+
+</body>
+</html>
