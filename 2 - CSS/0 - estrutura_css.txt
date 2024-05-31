@@ -1,0 +1,27 @@
+-- Estrutura da tag --
+
+p{
+    color: red;
+}
+
+p = seletor
+{} = chaves
+color = propriedade
+red = valor
+
+-----------------------
+
+Classes e ID -- Classes podem ser reutilizadas, IDs só podem haver um.
+
+. - Seleciona uma classe
+# - Seleciona um ID
+
+.background{}
+
+#usuario{}
+
+-----------------------
+
+
+
+

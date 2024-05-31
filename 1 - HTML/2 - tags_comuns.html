@@ -2,107 +2,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        th,td{
-            border: 1px solid #ccc;
-        }
-
-
-    </style>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
 
+    <h1>Tags HTML Mais usadas</h1>
 
-    <div> Tag genérica para um elemento</div>
-<span>Tag genérica para um elemento</span>
-<br> - Faz uma quebra de linha
-<h{1,2,3,4,5,6}>Tags de titulo</h{}> 
-<p>Cria um parágrafo</p>
-<hr> - Cria uma linha horizontal
-<br>
-<b>Texto em negrito</b>
-<strong>Texto em negrito</strong>
-<i>Texto em itálico</i>
-<em>texto em itálico</em>
-<u>texto um underline</u>
-<strike>texto em underline</strike> <!-- (descontinuado) -->
-<hr>
-<br>
-<ul>
-    Lista não ordenada
 
-    <li>Item da lista</li>
-</ul>
-<hr>
-<ol>
-    Lista ordenada
-    <li>Item da lista</li>
-</ol>
+    <h2>1 - HTML básico</h2>
 
-<img> - Insere uma imagem
+    <p>h1 até h6 - define titulos</p>
+    <h1>H1</h1>
+    <h6>H6</h6>
+    <p>define um parágrafo</p>
+    <br> <!-- Quebra de linha -->
+    <hr> <!-- Define uma linha horizontal -->
 
-<hr>
-
-<a>Insere um link</a>
-
-<hr>
-
-<table style="border: 2px solid #ccc;"> <!-- Cria uma tabela -->
-    <th>Cria o cabeçalho da tabela</th>
-    <th>Cria o cabeçalho da tabela</th>
-    <th>Cria o cabeçalho da tabela</th>
-
-    <tr> <!-- Cria uma linha na tabela   -->
-        <td>Insere um dado na tabela</td>
-        <td>Insere um dado na tabela</td>
-        <td>Insere um dado na tabela</td>
-    </tr>
-
-    <tr>
-        <td>Insere um dado na tabela</td>
-        <td>Insere um dado na tabela</td>
-        <td>Insere um dado na tabela</td>
-    </tr>
-
-    <tr>
-        <td>Insere um dado na tabela</td>
-        <td colspan="2">Insere um dado na tabela</td>
-    </tr>
-
-    <tr>
-        <td rowspan="2">Insere um dado na tabela</td>
-        <td>Insere um dado na tabela</td>
-        <td>Insere um dado na tabela</td>
-    </tr>
-
-    <tr>
-        <td>Insere um dado na tabela</td>
-        <td>Insere um dado na tabela</td>
-    </tr>
-</table>
-
-<form>
-
-    login:
-    <input> <!-- Realiza uma entrada de dados 
-                 Verificar atributos   -->
+    <h2>2 - Formatação</h2>
+    <abbr title="Fundação Getúlio Vargas">FGV</abbr> <!-- define uma abreviação -->
+    <address>Usada para definir um endereço</address>
+    <b>Texto em negrito</b>
+    <!-- bdi -->
+    <!-- bdo -->
+    <blockquote>Define uma seção que é uma citação de uma outra fonte</blockquote>
+    <cite>Define o titulo de um trabalho</cite>
     <br>
-
-    <select> <!-- Cria uma lista de opções -->
-        <option>Define a opção 1</option> 
-        <option>Define a opção 2</option> 
-        <option>Define a opção 3</option> 
-    </select>
-
+    <code>Define um pedaço de código</code>
     <br>
+    <del>Define um texto que foi excluído de um documento</del>
+    <br>
+    <dfn>Especifica um termo que vai ser definido dentro do conteúdo</dfn>
+    <br>
+    <em>Dá enfase a um texto</em>
+    <br>
+    <i>Define uma parte do texto num tom ou humor diferente</i>
+    <br>
+    <ins>Define um texto que foi inserido dentro de um documento</ins>
+    <br>
+    <kbd>Define uma entrada de teclado</kbd>
+    <br>
+    <mark>Define um texto marcado</mark>
+    <br>
+    <meter value="0.5">Define uma escala de medição dentro de um intervalo conhecido</meter>
+    <br>
+    <pre>Define um texto pre formatado</pre>
+    <progress>Representa o progresso de uma operação</progress>
+    <br>
+    <q>Define uma citação curta</q>
+    <br>
+    <rp>Define o que mostrar nos browsers que não suportam annotações ruby</rp>
+    <br>
+    <ruby>Define uma anotação ruby(para tipografia da asia leste)</ruby>
+    <br>
+    <s>Define um texto que não está correto</s>
+    <br>
+    <rt>Define um pronunciamento de caractres</rt>
+    <br>
+    <samp>Define uma saída de um programa de computador</samp>
+    <br>
+    <small>Texto pequeno</small>
+    <br>
+    <strong>Define um texto importante</strong>
+    <br>
+    <sub>Define um texto subescrito</sub>
+    <br>
+    <sup>Define um texto superescrito</sup>
+    <br>
+    <template>Define um container para conteudo que deve ficar escondido quando a pagina carregar</template>
+    <time datetime="10/06/2022">Define um tempo especifico</time>
+    <br>
+    <u>Define um texo que é inarticulado e estilizado diferente de um texto normal</u>
+    <br>
+    <var>Define uma variável</var>
+    <br>
+    <wbr>Define uma possivel quebra de linha
     
-    <textarea></textarea>
+    <p>Se eu quiser por exemplo que o texto quebre <wbr>aqui(masapalavraprecisasergrande)<wbr> é só eu usar essa tag</p>
+    
+    <h2>3 - Forms e entradas</h2>
+    
+    <form action="">Define um form HTML para entrada de usuário</form>
+    <input type="text"> <!-- Define um controle de input -->
+    <br>
+    <textarea name="" id="">Define um controle de input multilinha </textarea>
+    <br>
+    <button>Define um botão clicável</button>
+    <br>
+    <select name="" id="">Define uma lista dropdown
+        <optgroup disabled label="Desativado">
+            <option value="">Define uma opção</option>
+        </optgroup>
+        <optgroup label="ativado">
+            <option value="">Define uma opção</option>
+        </optgroup>
+    </select>
+    <label for="">Define um label para um elemento de input</label>
+    <fieldset>Agrupa elementos relacionados num form
+
+        <legend>Define um caption para um fieldset</legend>
+    </fieldset>
+    <datalist>Especifica uma lista de opções pre definidas para controles de input</datalist>
+    <output>Define o resultado de um calculo</output>
+    
+    <h2>4 - Frames</h2>
+    <iframe src="" frameborder="0">Define um frame inline</iframe>
+    
+    <h2>5 - imagens</h2>
+    <img src="" alt=""> <!-- Define uma imagem -->
+    <map name="">Define uma imagem de mapa do lado cliente</map>
+    <area shape="" coords="" href="" alt=""> <!-- Define uma area dentro da imagem de um mapa -->
+    <canvas>Usado para desenhar graficos, na hora, via script </canvas>
+    <figcaption>Define uma caption para um figure</figcaption>
+    <figure>Especifica um conteudo auto contido </figure>
+    <picture>Define um cntainer para multiplas imagens</picture>
+    <svg>Define um container grafico SVG</svg>
 
 
-</form>
+    <h2>6 - Áudio / Vídeo</h2>
+    <audio src="">Define um conteúdo de som</audio>
+    <source> Define multiplos <!-- pesquisar -->
+    <br>
+    <track> Define um texto de tracks para elementos de midia
+    <video src="">Define um video ou filme</video>
+    
+    
+    <h2>7 - Links</h2>
+
+    <a href="#">Define um hyperlink</a>
+    <link rel="stylesheet" href="$"> <!-- Define um documento externo que é uma dependência -->
+    <nav>Define uma barra de navegação</nav>
+
+    
+    <h2>Listas</h2>
+
+    <menu>Define uma ul alternativa</menu>
+    <ul>Define uma ul</ul>
+    <ol>Define uma ol</ol>
+    <li>Item da lista</li>
+    <dl>Define uma lista descritiva</dl>
+    <dt>Define um termo/nome numa lista descritiva</dt>
+    <dd>Define a descrição de um termo/nome numa lista descritiva</dd>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
