@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fontes</h1>
+
+    <p>Em Css existem 5 familias de fonte genéricas:</p>
+
+    <ul>
+        <li><b>Serif</b> Fontes tem um pequeno traço nos cantos de cada letra. Elas criam um sentido de formalidade e elegancia.</li>
+        <li><b>Sans-serif</b> Fontes tem linhas limpas(sem traços pequenos fixados). Eles criam um olhar moderno e minimalista. </li>
+        <li><b>Monospace</b> Fontes onde todas as letras tem a mesma largura fixa. Eles criam um olhar mecânico.</li>
+        <li><b>Cursive</b> Fonte imitam a escrita humana.</li>
+        <li><b>Fantasy</b> Fontes são decorativas/divertidas.</li>
+    </ul>
+
+    <h2>A propriedade Font-Family</h2>
+
+    <p>A propriedade <code>font-family</code> deve segurar diversas nome de fontes como um sistema de "fallback" <br></p>
+
+    <p>Exemplo</p>
+
+    <ul>
+        <li>font-family: "Times New Roman", Times, serif;</li>
+        <li>font-family: Arial, Helvetica, sans-serif;</li>
+        <li>font-family: "Lucida Console", "Courier New", monospace;</li>
+    </ul>
+
+    <h2>Web Safe Fonts</h2>
+
+    <p>São fontes que, universalmente, são instaladas geralmente em todos os browsers e dispositivos.</p>
+    <p>A seguir uma lista das melhores Safe Fonts para HTML e CSS</p>
+
+    <ul>
+        <li>Arial(sans-serif)</li>
+        <li>Verdana(sans-serif)</li>
+        <li>Tahoma(sans-serif)</li>
+        <li>Trebuchet MS (sans-serif)</li>
+        <li>Times New Roman(serif)</li>
+        <li>Georgia(serif)</li>
+        <li>Garamond(serif)</li>
+        <li>Courier New(monospace)</li>
+        <li>Brush Script New(cursive)</li>
+    </ul>
+
+    <h2>font style</h2>
+    <p>A propriedade possúi tres valores:</p>
+
+    <ul>
+        <li>normal - O texto é mostrado normalmente</li>
+        <li>italic - O texto é mostrado em itálico</li>
+        <li>oblique - O texto está "aprendendo"</li>
+    </ul>
+
+    <h2>Font Weight</h2>
+
+    <p>Especifica o peso da fonte(normal/bold)</p>
+
+    <h2>Font Variant</h2>
+    <p>A propriedade <code>font-variant</code> especifica se um texto deve ser mostrado em fonte diminuída. (normal/small-caps)</p>
+
+    <h2>Font Size</h2>
+
+    <p>A propriedade <code>font-size</code> define o tamanho do texto. <br>
+       Pode ser absoluto ou relativo.
+    </p>
+
+    <p>Absoluto:</p>
+    <ul>
+        <li>Define o texto para um tamanho especifico.</li>
+        <li>Não habilita o usuário a diminuir o tamanho do texto em todos os browsers.</li>
+        <li>Tamanho absoluto é proveitoso quando o tamanho fisico do output é conhecido.</li>
+    </ul>
+
+    <p>Relativo:</p>
+    <ul>
+        <li>Define o tamanho relativo a elementos a volta.</li>
+        <li>Habilita o usuário a mudar o tamanho do texto em browsers.  </li>
+    </ul>
+
+    <p>definir a fonte em pixels dá total controle sobre o tamanho do texto.</p>
+    <p>Para habilitar o usuário a redimensionar o texto(no menu do browser), uma porrada de desenvolvedores usam em ao inves de pixels.</p>
+    <p>1em é igual para o tamanho da fonte atual. O tamanho padrão de um texto nos browsers é 16px. Então o tamanho padrão de 1em é 16px.</p>
+    <p>o  tamanho pode ser calculado de pixels para em usando essa fórmula: pixels/16=em. </p>
+
+    <h2>Font Size responsivo</h2>
+
+    <p>O tamanho do texto pode ser definido com a unidade <code>vw</code>, que significa "viewport width"</p>
+
+    <h2>Font Pairing</h2>
+
+    <p>Regras do Font Pairing</p>
+
+    <p>Aqui estão algumas regras básicas para um bom font pairing:</p>
+
+    <dl>
+        <li>Complemento</li>
+        <dd>É sempre seguro achar font pairing que complementem uma as outras <br>
+            Uma boa combinação d efontes deve harmonizar, sem ser muito similar ou muito diferente.  
+        </dd>
+        
+        <li>Use Superfamilia de fotnes</li>
+        <dd>Uma superfamilia de fontes é um conjunto de fontes designada a trabalharem bem juntas. Então, usando diferentes Fontes
+            dentro da mesmoa superfamilia é seguro. <br><br>
+
+            Por exemplo, a superfamilia Lucida contém as seguintes fontes: Lucida Sansa, Lucida Serif, Lucida Typewriter Sans,
+            Lucida Typewriter Serif, e Lucida Math.
+        </dd>
+
+        <li>Contraste é Rei</li>
+        <dd>Duas fontes que são muuito similares irão conflitar. Em contrapartida, feito da forma certa, traz 
+            o melhor em cada fonte. <br>
+            Exemplo: Combinando serif com sans serif é uma boa combinação conhecida. <br>
+            Uma superfamilia forte inclúi tanto serif quanto sans serif variações da mesma fonte(e.g. Lucida e Lucida Sans).
+        </dd>
+
+        <li>Escolha apenas um chefe</li>
+        <dd>Uma fonte deve ser a chefe. Ela estabelece uma hierarquia para as fontes da sua página. Este pode ser alcançado pela
+            variação do tamanho, peso e cor.
+        </dd>
+    </dl>
+
+    <p>Algumas variações populares para font pairing</p>
+
+    <ul>
+        <li>Georgia(cabeçalho) e Verdana(texto)</li>
+        <li>Helvética(cabeçalho) e Garamond(texto)</li>
+        
+        <dd>Font pairing populares no google fonts</dd>
+        
+        <li>Merriweather(cabeçalho) e Open sans(texto)</li>
+        <li>Ubuntu(cabeçalho) e Lora(texto)</li>
+        <li>Abril Fatface(cabeçalho) e Poppins(texto)</li>
+        <li>Cinzel(cabeçalho) e Fauna One(texto)</li>
+        <li>Fjalla One(cabeçalho) e Libre Baskerville(texto)</li>
+        <li>Space Mono(cabeçalho) e Muli(texto)</li>
+        <li>Spectral(cabeçalho) e Rubik(texto)</li>
+        <li>Oswald(cabeçalho) e Noto Sans(texto)</li>        
+    </ul>
+
+    <h2>Shorthand</h2>
+
+    <p><code>font</code></p>
+
+    <ul>
+        <li>font-style</li>
+        <li>font-variant</li>
+        <li>font-weight</li>
+        <li>font-size/line-height</li>
+    </ul>
+
+    <p><code>font-size</code> e <code>font-family</code> são requeridos. Se um dos valores faltam são usados os valores padrão.</p>
+
+    font:(font-style)(font-variant)(font-weight)(font-size)/(line-height)(font-family)
+
+
+</body>
+</html>
