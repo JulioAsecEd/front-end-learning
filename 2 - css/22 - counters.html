@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">0
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            counter-reset:capitulo ;
+        }
+    
+        h2::before{
+            counter-increment: capitulo;
+            content: counter(capitulo) " - ";
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Counters</h1>
+
+    <p>Css counters são "variáveis" mantidas pelo CSS que seus valores podem ser incrementados por regras CSS. Counters deixam você ajustar a aparência de um conteúdo baseado no seu posicionamento no documento.</p>
+
+    <h2>Numeração automática com counters</h2>
+    <p>Css counters são "variáveis". Os valores das variáveis podem ser incrementados por regras CSS.</p>
+    <p>Para trabalhar com CSS counters vamos usar as seguintes propriedades</p>
+
+    <ul>
+        <li>counter-reset - Cria ou reseta um counter.</li>
+        <li>counter-increment - Incrementa o valor de um counter.</li>
+        <li>Content - Insere conteúdo gerado.</li>
+        <li>counter() ou counters() - adiciona o valor de um counter para um elemento.</li>
+    </ul>
+
+
+    <h2>Primeiro teste</h2>
+    <h2>Segundo teste</h2>
+    <h2>Terceiro teste</h2>
+</body>
+</html>
