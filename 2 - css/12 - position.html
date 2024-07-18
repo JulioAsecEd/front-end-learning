@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>position</h1>
+    <p>A propriedade <code>position</code> especifica o tipe de metodo de posicionamento usado para um elemento(static, relative, fixed, absolute ou sticky).</p>
+    <p>Existem cinco valores de posição difentes</p>
+
+    <ul>
+        <li>static</li>
+        <li>relativa</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>        
+    </ul>
+
+    <h2>static</h2>
+    <p>Elementos HTML são posicionados static por padrão.</p>
+    <p>Elementos posicionados estáticos não são afetados por propriedades, top, bottom, right, left.</p>
+    <p>Um elemento com <code>position:static</code> não é posicionado de qualquer modo especial. Isto é sempre posicionado de acordo com o fluxo normal da página.</p>
+
+    <h2>relative</h2>
+    <p>Um elemento com <code>position:relative</code> é posicionado relativamente a sua posição normal.</p>
+    <p>Definindo o top, right, bottom, e left propriedades de um elemento relativamente posicionado vai causar 
+       com que ele seja ajustado fora de sua posição normal. Outro conteúdo não será ajustado para caber dentro de qualquer gap deixado pelo elemento.
+    </p>
+
+    <h2>fixed</h2>
+    <p>Um elemento com <code>position:fixed</code> é posicionado relativo ao viewport, que significa que isso sempre estará no mesmo lugar mesmo que a página seja rolada
+       As propriedades top, right, bottom e left são usadas para posicionar o elemento. <br>
+       Um elemento fixado não deixa um gap na página onde isso normalmente deveria ser alocado. <br>
+    </p>
+
+    <h2>absolute</h2>
+    <p>Um elemento com <code>position:absolute</code> é posicionado relativo ao proximo ancestral posicionado. <br>
+       No entando, se um elemento posicionado absoluto não possui ancestrais posicionados ele usa o corpo do documento e se move ao longo do rolamento da pagina 
+    </p>
+
+    <h2>sticky</h2>
+    <p>Um elemento com <code>position:sticky</code> é posicionado baseado no scrool do usuário.</p>
+    <p>Um elemento sticky alterna entre <code>relative</code> e <code>fixed</code> dependendo da posição do scroll.</p>
+  
+    <h2>clip</h2>
+    <p>Depreciado, useo clip-path. Deixa você especificar um retangulo para clipar um elemento posicionado absoluto. o Retangulo é especificado as 4 coordinadas, todos do canto superior esquerdo ao elemento que vai ser clipado.</p>
+</body>
+</html>

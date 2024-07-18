@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Overflow</h1>
+
+    <p>A propriedade <code>overflow</code> controla o que acontece com o conteúdo que é muito grande para caber em uma área.</p>
+    <p>A propriedade tem os seguintes valores</p>
+    <ul>
+        <li>visible - Padrão. O everflow não é clipado. O conteúdo renderiza fora da caixa do elemento.</li>
+        <li>hidden - O overflow é clipado, e o resto do conteúdo ficará invisível.</li>
+        <li>scroll - O overflow é clipado, e um scrollbar é adicionada para visualizar o resto do conteúdo.</li>
+        <li>auto - similar a <code>scroll</code>, mas adiciona uma scrollbar somente quanto necessário.</li>
+    </ul>
+
+    <p>A propriedade <code>overflow</code> só funciona para elementos de bloco com uma altura especifica.</p>
+
+    <h2>visible</h2>
+    <p>Por padrão, o overflow é <code>visible</code>, significa que isso não é clipado e renderiza fora da caixa do elemento.</p>
+
+    <h2>hidden</h2>
+    <p>Com o valor <code>hidden</code>, o overflow é clipado e o resto do conteúdo é escondido.</p>
+
+    <h2>scroll</h2>
+    <p>Definindo o valor para <code>scroll</code>, o overflow é clipado e uma scrollbar é adicionada para rolar dentro da caixa. <br>
+       Note que isto vai adicionar uma scrollbar tanto horizontalmente quanto verticalmente(mesmo se você não precisar).
+    </p>
+
+    <h2>auto</h2>
+    <p>O valor <code>auto</code> é similar a <code>scroll</code>, mas adiciona uma scrollbar somente quando necessário.</p>
+
+    <h2>overflow-x e overflow-y</h2>
+    <p>O <code>overflow-x</code> e <code>overflow-y</code> especifica se é para trocar o overflow do conteúdo somente horizontalmente ou verticalmente(ou os dois)</p>
+
+    <p><code>overflow-x</code> especifica o quê fazer com os cantos esquedo/direito do conteúdo.</p>
+    <p><code>overflow-y</code> especifica o quê fazer com os cantos acima/abaixo do conteúdo.</p>
+
+    <h2>overflow-wrap</h2>
+    <p>O <code>overflow-wrap</code> especifica se o browser pode quebrar linhas com longas palavras se eles sobrepuserem o container.</p>
+    <p>valores</p>
+
+    <ul>
+        <li>normal - Palavras longas não vão quebrar, mesmo se elas sobrepuserem o container. Padrão.</li>
+        <li>anywhere - Palavras longas vão quebrar se elas sobrepuserem o container.</li>
+        <li>break-word - Palavras longas vão quebrar se elas sobrepuserem o container.</li>
+    </ul>
+
+    
+</body>
+</html>

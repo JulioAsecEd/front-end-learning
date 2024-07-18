@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         div.irmao ~ p {
+            background-color: #ccc;
+        }
+
+
+        div.decendente p {
+            background-color: aqua;
+        }
+
+        div.filho > p{
+            background-color: red;
+        }
+
+        div.adjacente + p{
+            background-color: green;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <h1>Css Combinators</h1>
+    <p>Um seletor CSS pode conter mais de um seletor simples. Entre os seletores simples, nós podemos incluir combinadores.</p>
+    <p>Existem quatro combinadores diferentes em Css</p>
+
+    <ul>
+        <li>Seletor decendente (espaço)</li>
+        <li>Seletor filho (>)</li>
+        <li>Seletor irmão adjacente (+)</li>
+        <li>Seletor de gêmeos geral (~)</li>
+    </ul>
+
+    <h2>Descendant Selector</h2>
+    <p>Os seletores decendentes correspondem todos os elementos que são decendentes de um elemento especifico. <br>
+       O exemplo seleciona todos os elementos <code>p</code> dentro de elementos <code>div</code>. <br>
+       <code>div p</code>        
+    </p>
+
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+    <div class="decendente">
+        <p>Primeira tag <code>P</code>.</p>
+        <p>Segunda tag <code>P</code>.</p>
+        <p>Terceira tag <code>P</code>.</p>
+    </div>
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+
+    <hr>
+
+    <h2>Child Selector (>)</h2>
+    <p>O child selector seleciona todos os elementos que são filhos de um elemento especifico. <br>
+       O exemplo seleciona todos os elementos <code>p</code> que são filhos de um elemento <code>div</code>. <br>
+       <code>div > p</code>
+
+    </p>
+
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+    <div class="filho">
+        <p>Primeira tag <code>P</code>.</p>
+        <p>Segunda tag <code>P</code>.</p>
+        <p>Terceira tag <code>P</code>.</p>
+    </div>
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+
+    <hr>
+
+    <h2>Adjacent Sibling Selector (+)</h2>
+    <p>O seletor de irmão adjacente é usado para selecionar um elemento que vem diretamente após de um elemento especifico. <br>
+       Elementos irmãos devem tem o mesmo elemento pai e "adjacente" significa "seguido imediatamente". <br>
+       O exemplo seleciona o primeiro elemento <code>p</code> que é posicionado imediatamente depois do elemento <code>div</code>. <br>
+       <code>div + p</code>  
+    </p>
+
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+    <div class="adjacente">
+        <p>Primeira tag <code>P</code>.</p>
+        <p>Segunda tag <code>P</code>.</p>
+        <p>Terceira tag <code>P</code>.</p>
+    </div>
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+    <hr>
+    
+    <h2>Elemento irmão geral (~)</h2>
+    <p>O seletor de irmão geral seleciona todos os elementos que são irmãos próximos de um elemento especifico.</p>
+    <p>O exemplo seleciona todos os elementos <code>p</code> que são irmãos próximos de um elemento <code>div</code> <br>
+       <code>div ~ p</code>  
+    </p>
+    
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+    <div class="irmao">
+        <p>Primeira tag <code>P</code>.</p>
+        <p>Segunda tag <code>P</code>.</p>
+        <p>Terceira tag <code>P</code>.</p>
+    </div>
+    <p>Tag <code>p</code> fora do <code>div</code></p>
+</body>
+</html>
