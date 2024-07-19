@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>!important</h2>
+    <p>A regra <code>!important</code> em css é usada para adicionar mais importancia para uma propriedade/valor do que o normal.</p>
+    <p>In fact, if you see the <code>!important</code> rule, isso vai sobrepor TODOS as regras de estilo anteriores para aquela propriedade especifica num elemento.</p>
+    
+    <h2>Important about !important</h2>
+    <p>A única forma de sobrepor uma regra <code>!important</code> é incluir outra regra <code>!important</code> numa declaração com a mesma(ou maior) especificidade no código fonte, e aqui o problema começa 
+       Isso faz o código css confuso e o debbug será dificil, especialmente se você tem uma grande folha de estilo.
+    </p>
+
+    <h2>May one or two fair uses of !important</h2>
+
+    <p>Um jeito de usar <code>!important</code> é se você tiver que sobrepor um estilo que não pode ser sobreposto de nenhum outro jeito. Isso pode ser se você está trabalhando em um Content Management System(CMS) 
+       e não pode editar o código css. Então você pode definir algum estilo customizado para sobrepor alguns dos CMS styles. <br>
+
+       Outro jeito de usar <code>!important</code> é: Assumir que você quer uma aparencia especial para todos os botões numa página.
+    </p>
+</body>
+</html>

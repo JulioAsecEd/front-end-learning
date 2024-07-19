@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS especificity</h1>
+
+    <p>Se existem duas ou mais regras css que apontam para o mesmo elemento, o seletor com a maior especificidade vai "ganhar", e sua declaração de estilo será aplicada para o elemento html</p>
+    <p>Pense a especificidade como um score/rank que determina qual declaração de estilo é uktimamente aplicada para um elemento.</p>
+
+    <h2>Specificity hierarchy</h2>
+    <p>Todo seletor CSS tem seu lugat na hierarquia de specificidade</p>
+    <p>existem 4 categorias que definem o level de especificidade para um seletor</p>
+
+    <ol>
+        <li>Inline styles - Exemplo: h1 style="color:pink;"</li>
+        <li>IDs - Exemplo: #navbar </li>
+        <li>Classes, pseudo-classes, seletores de atributos - Exemplo: .test, :hover, [href]</li>
+        <li>Elementos e pseudo-elementos - Exemplo: h1, ::before</li>
+    </ol>
+
+    <h2>Como calcular a especificidade</h2>
+
+    <p>começe com 0, adicione 100 para cada valor de ID, adicione 10 para valores de classe(ou pseudo-classe ou seletores de atributos), adicione 1 para cada seletor de elemento ou pseudo-elemento.</p>
+
+    <table>
+        <thead>
+            <th>
+                <tr>
+                    <th>Seletor</th>
+                    <th>Valor de especificidade</th>
+                    <th>calculo</th>
+                </tr>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>*</td>
+                <td>0</td>
+                <td>0(seletor universal é ignorado)</td>
+            </tr>
+
+            <tr>
+                <td>p</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>.test</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>#demo</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>p style="color:pink;"</td>
+                <td>1000</td>
+                <td>1000</td>
+            </tr>
+
+            <tr>
+                <td>p.test</td>
+                <td>11</td>
+                <td>1 + 10</td>
+            </tr>
+
+            <tr>
+                <td>p.test1.test2</td>
+                <td>21</td>
+                <td>1 + 10 + 10</td>
+            </tr>
+
+            <tr>
+                <td>p#demo</td>
+                <td>101</td>
+                <td>1 + 100</td>
+            </tr>
+
+            <tr>
+                <td>#navbar p#demo</td>
+                <td>201</td>
+                <td>100 + 1 + 100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Outras regras de especificidade</p>
+    
+    <p>IDS tem mais especificidade que seletores de atributos</p>
+    <p>
+        div#a <br>
+        div[id=a] 
+
+    </p>
+
+    <p>Seletores contextuais são mais especificos que seletores de elemento único</p>
+    <p>Um seletor de classe vence qualquer número de seletores de elemento</p>
+
+</body>
+</html>
